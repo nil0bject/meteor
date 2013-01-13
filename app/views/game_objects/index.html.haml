@@ -1,0 +1,23 @@
+%h1 Listing game_objects
+
+%table
+  %tr
+    %th Gameobjectdata
+    %th X
+    %th Y
+    %th
+    %th
+    %th
+
+  - @game_objects.each do |game_object|
+    %tr
+      %td= game_object.gameObjectData
+      %td= game_object.x
+      %td= game_object.y
+      %td= link_to 'Show', game_object
+      %td= link_to 'Edit', edit_game_object_path(game_object)
+      %td= link_to 'Destroy', game_object, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Game object', new_game_object_path

@@ -1,0 +1,2 @@
+module GameObjectDataHelper
+end

@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Gameobjectdata:
+  = @game_object.gameObjectData
+%p
+  %b X:
+  = @game_object.x
+%p
+  %b Y:
+  = @game_object.y
+
+= link_to 'Edit', edit_game_object_path(@game_object)
+\|
+= link_to 'Back', game_objects_path

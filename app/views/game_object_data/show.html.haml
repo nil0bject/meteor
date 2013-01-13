@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @game_object_datum.name
+%p
+  %b Sprites url:
+  = @game_object_datum.sprites_url
+
+= link_to 'Edit', edit_game_object_datum_path(@game_object_datum)
+\|
+= link_to 'Back', game_object_data_path
